@@ -8,8 +8,8 @@
 import Foundation
 
 // MARK: - 多设备连接报告的设备信息列表
-@Observable
-@DebugDescription
+//@Observable
+//@DebugDescription
 public final class Multipoint {
     
     var debugdescription: String {

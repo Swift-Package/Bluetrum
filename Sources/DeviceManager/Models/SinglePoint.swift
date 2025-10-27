@@ -9,8 +9,8 @@ import Foundation
 import Observation
 
 // MARK: - 多设备连接报告的设备信息列表单个设备项
-@Observable
-@DebugDescription
+//@Observable
+//@DebugDescription
 public final class SinglePoint: Identifiable {
 	
 	public var id: String {

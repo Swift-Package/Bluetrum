@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "Bluetrum",
-	platforms: [.iOS(.v18), .macOS(.v15), .visionOS(.v26)],
+	platforms: [.iOS(.v15), .macOS(.v15), .visionOS(.v26)],
     products: [
         .library(name: "Bluetrum",targets: ["Bluetrum"]),
 		.library(name: "FOTA", targets: ["FOTA"]),
