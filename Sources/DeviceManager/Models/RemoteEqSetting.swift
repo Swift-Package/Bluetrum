@@ -11,7 +11,7 @@ public struct RemoteEqSetting {
     
     public static let DEFAULT_SEGMENT_NUMBER: UInt8 = 10
     
-    public static let CUSTOM_START_INDEX: UInt8 = 0x20
+    public static let CUSTOM_START_INDEX: UInt8 = 0x20		// 蓝讯设备自定义均衡器起始索引从 32 开始 如果使用 EqRequest.CustomEqRequest(eqMode: 1, gains: eqRestting) 意味着返回的 EqMode 的 Index 是 33
     
     public static let EQUALIZER_VIEW_MAX_VALUE: Int = 12 // 均衡器±最大增益
     

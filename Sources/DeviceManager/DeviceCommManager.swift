@@ -81,9 +81,8 @@ open class DeviceCommManager {
     
     open func sendRequest(_ request: Request) {
         sendRequest(request) { request, result, timeout in
-#if DEBUG
-            print("❌❌❌❌ 超时 request == \(String(describing: request)),result == \(String(describing: result)), timeout = \(timeout)")
-#endif
+			NotificationCenter.default.post(name: NSNotification.Name("RequestTimeOut"), object: nil)// 发送通知出去告诉外面有请求超时了可以建立重试机制
+            print("❌❌❌❌ 超时 request == \(String(describing: request)), result == \(String(describing: result)), timeout = \(timeout)")
         }
     }
     
