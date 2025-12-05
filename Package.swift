@@ -1,11 +1,11 @@
-// swift-tools-version: 6.2
+// swift-tools-version: 6.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "Bluetrum",
-	platforms: [.iOS(.v15), .macOS(.v15), .visionOS(.v26)],
+	platforms: [.iOS(.v15)],
     products: [
         .library(name: "Bluetrum",targets: ["Bluetrum"]),
 		.library(name: "FOTA", targets: ["FOTA"]),
